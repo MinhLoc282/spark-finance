@@ -1,0 +1,41 @@
+{
+  "aggregator": {
+    "ic": "3p4yp-ziaaa-aaaap-qhjrq-cai"
+  },
+  "aggregator0": {
+    "ic": "dtq4p-laaaa-aaaap-qhlia-cai"
+  },
+  "aggregator1": {
+    "ic": "dur23-gyaaa-aaaap-qhliq-cai"
+  },
+  "assets": {
+    "ic": "352pw-vyaaa-aaaap-qhjsq-cai"
+  },
+  "borrow": {
+    "ic": "323jc-yaaaa-aaaap-qhjsa-cai"
+  },
+  "borrow0": {
+    "ic": "c66yb-eiaaa-aaaap-qhlpq-cai"
+  },
+  "borrow1": {
+    "ic": "hcfce-paaaa-aaaap-qhlqa-cai"
+  },
+  "deposit": {
+    "ic": "2xvnm-xiaaa-aaaap-qhjvq-cai"
+  },
+  "deposit0": {
+    "ic": "pma24-iiaaa-aaaap-qhkhq-cai"
+  },
+  "deposit1": {
+    "ic": "nr5uu-3aaaa-aaaap-qhkia-cai"
+  },
+  "swap": {
+    "ic": "3uzek-dqaaa-aaaap-qhjta-cai"
+  },
+  "token0": {
+    "ic": "7hm73-oaaaa-aaaap-qhfha-cai"
+  },
+  "token1": {
+    "ic": "7anzp-dyaaa-aaaap-qhfhq-cai"
+  }
+}

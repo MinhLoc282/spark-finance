@@ -1,0 +1,89 @@
+{
+  "canisters": {
+    "internet_identity": {
+      "type": "custom",
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      }
+    },
+    "swap": {
+      "type": "motoko",
+      "main": "canisters/swap/src/swap.mo"
+    },
+    "token0": {
+      "type": "motoko",
+      "main": "canisters/ICRC1/Canisters/token.mo"
+    },
+    "token1": {
+      "type": "motoko",
+      "main": "canisters/ICRC1/Canisters/token.mo"
+    },
+    "deposit0": {
+      "type": "motoko",
+      "main": "canisters/deposit/deposit.mo"
+    },
+    "deposit1": {
+      "type": "motoko",
+      "main": "canisters/deposit/deposit.mo"
+    },
+    "aggregator": {
+      "type": "motoko",
+      "main": "canisters/aggregator/aggregator.mo"
+    },
+    "aggregator0": {
+      "type": "motoko",
+      "main": "canisters/aggregator/aggregator.mo"
+    },
+    "aggregator1": {
+      "type": "motoko",
+      "main": "canisters/aggregator/aggregator.mo"
+    },
+    "borrow": {
+      "type": "motoko",
+      "main": "canisters/borrow/borrow.mo"
+    },
+    "borrow0": {
+      "type": "motoko",
+      "main": "canisters/borrow/borrowOneToken.mo"
+    },
+    "borrow1": {
+      "type": "motoko",
+      "main": "canisters/borrow/borrowOneToken.mo"
+    },
+    "assets": {
+      "dependencies": [
+        "swap", "token0", "token1", "borrow", "aggregator"
+      ],
+      "frontend": {
+        "entrypoint": "dist/index.html"
+      },
+      "source": [
+        "dist/",
+        "frontend/assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "mops sources"
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943",
+      "type": "ephemeral"
+    },
+    "ic": {
+      "providers": [
+        "https://mainnet.dfinity.network"
+      ],
+      "type": "persistent"
+    }
+  },
+  "version": 1
+}

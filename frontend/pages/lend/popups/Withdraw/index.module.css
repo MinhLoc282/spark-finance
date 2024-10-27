@@ -1,0 +1,322 @@
+
+.SelectContainer {
+  display: flex;
+  border-radius: 12px;
+  padding: 6px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.TitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+}
+
+.Title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.SubTitle {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.SelectOption {
+  flex: 1;
+  padding: 10px;
+  margin: 0;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background: inherit;
+  border-radius: 8px;
+  color: #858697;
+  border: 1px solid #2C2D3B;
+}
+
+.SelectOption:hover {
+  background: #232534;
+}
+
+.LabelContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.Label {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #CCCCCC;
+}
+
+.Label svg {
+  margin-left: 4px;
+}
+
+.CustomSelection {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #858697;
+}
+
+.BottomContainer {
+  margin-top: 16px;
+}
+
+.RightLabel {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #858697;
+}
+
+.Active {
+  background-color: #232534;
+  color:#ACB3F9;
+}
+
+.ButtonContainer {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 12px;
+  gap: 6px;
+  width: 100%;
+  height: 48px;
+  background: #20212D;
+  border: 0.5px solid #393B4C;
+  border-radius: 6px;
+  color: #A6ADFA;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Ellipse {
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  left: 0;
+  top: 38px;
+  background: rgba(126, 135, 255, 0.8);
+  filter: blur(25px);
+}
+
+.CloseButton {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.DropdownIcon {
+  transform: rotate(90deg);
+}
+
+.Label1 {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.InputContainer {
+  position: relative;
+  margin-top: 16px;
+}
+
+.InputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.IconContainer {
+  position: absolute;
+  left: 24px;
+  z-index: 1;
+}
+
+.LockContainer{
+  position: absolute;
+  right: 18px;
+  z-index: 1;
+  display: flex;
+}
+
+.InputField {
+  height: 60px;
+  padding: 8px 52px 8px 58px;
+  box-sizing: border-box;
+  background-color: #1C1D26;
+  border: 1px solid #2C2D3B;
+  border-radius: 12px;
+  color: #858697;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.InputField::placeholder {
+  color: #858697 !important;
+}
+
+.MaxButton {
+  position: absolute;
+  right: 8px;
+  width: 60px;
+  height: 25px;
+  padding: 0;
+  background-color: #3C3C48;
+  color: #CCCCCC;
+}
+
+.HeaderLendTable > th{
+  color: rgba(204, 204, 204, 1);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.HeaderTable {
+  border-top: 1px solid rgba(44, 45, 59, 1);
+  border-bottom: 1px solid rgba(44, 45, 59, 1);
+}
+
+.TableContainer{
+  height: 85px;
+  overflow: scroll;
+}
+
+.LendTable {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.LendTable th, .LendTable td {
+  padding: 6px 6px 6px 6px;
+  text-align: center;
+  width: 33%;
+}
+
+.LendTable td {
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.LendTable tbody {
+  text-align: center;
+  color: rgba(133, 134, 151, 1);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.LendTable tr:last-child td {
+  border-bottom: 1px solid rgba(44, 45, 59, 1);
+}
+
+.LendTable th:last-child,
+.LendTable td:last-child {
+  border-right: 1px solid rgba(44, 45, 59, 1);
+}
+
+.tableSecondChild {
+  border-right: 1px solid rgba(44, 45, 59, 1);
+  border-left: 1px solid rgba(44, 45, 59, 1);
+}
+
+.LendTable th:first-child,
+.LendTable td:first-child {
+  border-left: 1px solid rgba(44, 45, 59, 1);
+}
+
+.relativeDropdown{
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(28, 29, 38, 1);
+}
+
+.clearButtonCss{
+  margin: 0;
+  padding: 0;
+  background-color: rgba(28, 29, 38, 1);
+  width: 100%;
+}
+
+.optionDropdown {
+  position: absolute;
+  background-color: rgba(28, 29, 38, 1);
+  top: 24px;
+  right: 0px;
+  /* border: 1px solid rgba(44, 45, 59, 1); */
+}
+
+.optionDropdown > button{
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+}
+
+.optionDropdown > button > div{
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+}
+
+.optionDropdown > button:hover {
+  background-color: rgba(35, 37, 52, 1);
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+}
+
+.selectedRow {
+  background-color: #232534;
+}
